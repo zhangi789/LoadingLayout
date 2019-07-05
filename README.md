@@ -7,7 +7,7 @@
 原理比较简单，继承FrameLayout，在xml渲染完成后，加上加载中、无网络、无数据、出错四个页面，根据需要控制显示哪一层，花了些时间，开了很多方法出来，支持很多属性的设置，算是比较实用，源码里已对各个方法的作用都加了注释，就不做过多解释了。
 ### 使用方式
 gradle引用：
->compile 'com.lai.weavey:loadinglayout:1.2'
+> implementation 'com.github.zhangi789:LoadingLayout:3.1.2'
 
 ### 使用说明
 >LoadingLayout支持全局配置，对所有使用到的地方都起效，需要在Application中配置，如下：
@@ -81,7 +81,7 @@ loadingLayout.setOnReloadListener(new LoadingLayout.OnReloadListener() {
 >最后，在xml里面使用：
 
 ```
-<com.weavey.loading.lib.LoadingLayout
+<cn.shmm.com.LoadingLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -101,7 +101,7 @@ loadingLayout.setOnReloadListener(new LoadingLayout.OnReloadListener() {
         android:layout_height="match_parent"
         android:text="ContentView"/>
 
-</com.weavey.loading.lib.LoadingLayout>
+</cn.shmm.com.LoadingLayout>
 ```
 >注意：
 
