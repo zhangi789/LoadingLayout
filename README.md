@@ -101,7 +101,7 @@ loadingLayout.setOnReloadListener(new LoadingLayout.OnReloadListener() {
         android:layout_height="match_parent"
         android:text="ContentView"/>
 
-</com.weavey.loading.lib.LoadingLayout>
+</cn.shmm.com.LoadingLayout>
 ```
 >注意：
 
